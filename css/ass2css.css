@@ -1,0 +1,40 @@
+a{
+    color: blue
+}
+a:hover{
+    color: blue;
+}
+#a{
+
+    font-size: 40px;
+}
+#b{
+    font-size: 12px;
+}
+#c{
+    font-size: 20px;
+}
+#d{
+
+    line-height: 50px;
+}
+
+#e{
+    line-height: 50px;
+    font-size: 13px;
+}
+p{
+    text-align: left;
+}
+#g{
+    line-height: 50px;
+}
+#h{
+    line-height: 50px;
+}
+#i{
+    line-height: 50px;
+}
+#j{
+    text-align: center;
+}
