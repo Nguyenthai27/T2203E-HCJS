@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jackpot</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function jackpot(){
+
+        var randomNumbers = [];//mang chua 6 so ngau nhien
+        var ticketNumber = [];//mang chua 6 so nguoi dung mua ve
+        //tao ngau nhien 6 so tu 0->45
+        while (randomNumbers.length < 6){
+            var r=Math.random();
+            r = r*46;//muon co gia tri 45 phai nhan voi 46
+            r=parseInt(r);
+            if(!randomNumbers.includes(r)){
+                randomNumbers.push(r);
+            }
+        }
+        console.log(randomNumbers);
+
+        //yeu cau nhap 6 so khac nhau tu 0->45
+        while(ticketNumber.length<6){
+            var n=prompt("Nhap so tu 0->45");
+            n = parseInt(n);
+            if(!isNaN(n) && !ticketNumber.includes(n) && n>=0 && n<=45){
+                ticketNumber.push(n);
+            }
+        }
+
+        //so sanh
+        var dem=0;
+
+        for(var i=0;i<randomNumbers.length;i++){
+            if(ticketNumber.includes(randomNumbers[i])){
+                dem++;
+            }
+        }
+        // setTimeout(function (){
+        //     switch (dem){
+        //         case 6: alert("chuc mung ban da trung Jackpot");break;
+        //         case 5: alert("chuc mung ban da trung 10 trieu");break;
+        //         case 4: alert("chuc mung ban da trung 300 000");break;
+        //         case 3: alert("chuc mung ban da trung 50 000");break;
+        //         default: alert("chuc ban may man lan sau");
+        //     }
+        // },5000);//ham goi quay tro lai
+         var x=0;
+         var xyz = setInterval(function (){
+            switch (dem){
+                case 6: alert("chuc mung ban da trung Jackpot");break;
+                case 5: alert("chuc mung ban da trung 10 trieu");break;
+                case 4: alert("chuc mung ban da trung 300 000");break;
+                case 3: alert("chuc mung ban da trung 50 000");break;
+                default: alert("chuc ban may man lan sau");
+            }
+            x++;
+            if(x==3){
+                clearInterval(xyz);
+            }
+        },1000);
+
+        }
+    </script>
+</body>
+</html>
