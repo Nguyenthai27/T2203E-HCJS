@@ -1,6 +1,4 @@
-body{
-    background-color: #008040;
-}
+
 .card{
     width: 400px;
     border:none;
@@ -62,4 +60,7 @@ i{
 }
 .forgot{
     margin-top: 24px;
+}
+#body{
+    background-color: #008040;
 }
