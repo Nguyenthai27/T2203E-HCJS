@@ -23,11 +23,11 @@ body{
 }
 .nav-pills .nav-link {
     border-radius: 0px;
-    border-bottom: 1px solid #0d6efd40;
+    border-bottom: 1px solid #fafafa;
 }
 .nav-item{
     display: table-cell;
-    background: #0d6efd2e;
+    background: #E1E1E1;
 }
 .form{
     padding: 10px;
